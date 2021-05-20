@@ -78,6 +78,10 @@
     border-radius: 16px;
     padding: 17px 15px;
 }
+#botao-codigo:hover{
+    background-color: rgba(80, 129, 251, 0.64);
+    transition: 1s;
+}
 #botao-comunidade{
     background-color:rgba(80, 129, 251, 0.16);;
     border-radius: 16px;
