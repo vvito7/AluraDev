@@ -385,5 +385,6 @@
     }
     #salvar{
         width: 300px;
+        margin: 0 0 32px 0;
     }
 }
