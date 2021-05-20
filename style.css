@@ -36,6 +36,9 @@
     opacity: 0.64;
 }
 
+#responsivo-mobile{
+    display: none;
+}
 #menu-responsivo{
     display: none;
 }
@@ -303,6 +306,9 @@
     #imagem-autor{
         display: none;
     }
+    #responsivo-mobile{
+        display: inline;
+    }
     #menu-responsivo{
         display: inline-block;
     }
@@ -350,6 +356,9 @@
     }
     .text-field{
         display: none;
+    }
+    #responsivo-mobile{
+        display: inline;
     }
     #lupa-responsiva{
         display: inline-block;
