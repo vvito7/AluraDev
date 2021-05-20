@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id='cabecalho'>
+            <img id='logo-alura' src='imagens/logo.svg' alt='Logo da AluraDev'>
+            <input class='text-field' type='text' placeholder='Busque por algo'>
+            <img id='imagem-autor' src='imagens/author.svg' alt='Foto de perfil do autor'>
+            <div id='responsivo-mobile'>
+                <img id='lupa-responsiva' src='imagens/lupa.svg' alt='Buscar por algo'>
+                <img id='menu-responsivo' src='imagens/menu-responsive.svg' alt='Menu'>
+            </div>
+        </div>
+    </header>
+    <div id='conteudo-pagina'>
+        <section id='menu'>
+            <h2 id='titulo-menu'>Menu</h2>
+            <div class='conteudo-menu'>
+                <img id='botao-menu' src='imagens/menu.svg' alt='Simbolo do menu'>
+                <p id='conteudo-menu'>Menu</p>
+            </div>
+            <div class='conteudo-menu'>
+                <img id='botao-codigo' src='imagens/codigo.svg' alt='Simbolo de código'>
+                <p id='conteudo-codigo'>Editor de código</p>
+            </div>
+            <div class='conteudo-menu'>
+                <img id='botao-comunidade' src='imagens/comunidade.svg' alt='Simbolo da comunidade'>
+                <p id='conteudo-comunidade'>Comunidade</p>
+            </div>
+        </section>
+        <section id='editor-de-codigo'>
+            <div id='quadro'>
+                <div id='editor-codigo'>
+                    <div class='header-editor'>
+                        <img class='ellipses' src='imagens/ellipse-3.svg'>
+                        <img class='ellipses' src='imagens/ellipse-2.svg'>
+                        <img class='ellipses' src='imagens/ellipse-1.svg'>
+                    </div>
+                    <div id='text-editor'>
+                        <textarea id='editor'></textarea>
+                    </div>
+                </div>
+            </div>
+            <button id='botao-highlight'>Visualizar com o highlight</button>
+        </section>
+        <section id='sobre'>
+            <h2 class='titulos-sobre'>Seu projeto</h2>
+            <input id='nome-projeto' type='text' placeholder='Nome do projeto'>
+            <textarea id='descricao-projeto' placeholder='Descrição do projeto'></textarea>
+            <h2 class='titulos-sobre'>Personalização</h2>
+            <div id='selecionar'>
+                <select id='selecionar-linguagem'>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>PHP</option>
+                </select>
+                <input id='selecionar-cor' type='color' value='#6BD1FF'>
+            </div>
+            <input id='salvar' type='submit' value='Salvar projeto'>
+        </section>
+    </div>
+</body>
+</html>
