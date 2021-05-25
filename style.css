@@ -133,6 +133,8 @@
     margin: 20px 0 0 28px;
 }
 #editor{
+    display: block;
+    white-space: pre-wrap;
     outline: none;
     resize: none;
     width: 565px;

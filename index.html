@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="monokai.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
@@ -46,7 +47,7 @@
                         <img class='ellipses' src='imagens/ellipse-1.svg'>
                     </div>
                     <div id='text-editor'>
-                        <textarea id='editor'></textarea>
+                        <code id='editor' class='hljs' contenteditable='true'></code>
                     </div>
                 </div>
             </div>
@@ -59,17 +60,18 @@
             <h2 class='titulos-sobre'>Personalização</h2>
             <div id='selecionar'>
                 <select id='selecionar-linguagem'>
-                    <option>HTML</option>
-                    <option>CSS</option>
-                    <option>JavaScript</option>
-                    <option>Python</option>
-                    <option>PHP</option>
+                    <option value='javascript'>JavaScript</option>
+                    <option value='html'>HTML</option>
+                    <option value='css'>CSS</option>
+                    <option value='python'>Python</option>
+                    <option value='php'>PHP</option>
                 </select>
                 <input id='selecionar-cor' type='color' value='#6BD1FF'>
             </div>
             <input id='salvar' type='submit' value='Salvar projeto'>
         </section>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script src='index.js'></script>
 </body>
 </html>
