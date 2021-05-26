@@ -136,7 +136,7 @@
     display: block;
     white-space: pre-wrap;
     outline: none;
-    resize: none;
+    overflow: auto;
     width: 565px;
     height: 220px;
     background-color: #141414;
