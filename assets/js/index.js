@@ -47,3 +47,10 @@ botaoXis.addEventListener('click', function(){
     botaoBarras.classList.remove('naoBarras');
     botaoBarras.classList.add('menu-responsivo');
 });
+
+/*barra de busca mobile*/
+const lupaPesquisa = document.querySelector('#lupa-responsiva');
+
+lupaPesquisa.addEventListener('click', function(){
+    
+});

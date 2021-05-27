@@ -413,6 +413,9 @@
         display: inline-block;
         margin: 0 10px 0 0;
     }
+    .menu-open{
+        margin: 10px 0 0 131px;
+    }
     #quadro{
         width: 300px;
     }
