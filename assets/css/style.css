@@ -42,7 +42,10 @@
 #menu-responsivo{
     display: none;
 }
-#lupa-responsiva{
+.lupa-responsiva{
+    display: none;
+}
+.lupa-responsiva2{
     display: none;
 }
 .fechar-menu{
@@ -323,12 +326,14 @@
     }
     .menu-responsivo{
         display: inline-block;
+        animation: espande .5s ease;
     }
     .naoBarras{
         display: none;
     }
     .xis{
         display: inline-block;
+        animation: espande .5s ease;
     }
     .menu{
         display: none;
@@ -343,6 +348,7 @@
         border-radius: 8px;
         width: 170px;
         margin: 10px 0 0 502px;
+        animation: ativar-menu .5s linear;
     }
     #titulo-menu{
         display: none;
@@ -393,6 +399,13 @@
         margin: 20px 0 0 0;
         width: 662px;
     }
+    @keyframes ativar-menu {
+        from{transform: translateX(400px);}
+        to{transform: translateX(0);}
+    }
+    @keyframes espande {
+        from{transform: scale(0);}
+    }
 }
 
 @media screen and (max-width: 376px){
@@ -403,13 +416,49 @@
         display: flex;
         width: 295px;
     }
+    .logo-naoaparece{
+        display: none;
+    }
+    .logo-alura{
+        animation: espande .5s ease;
+    }
+    .text-field-aparece{
+        background: rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        border: none;
+        width: 200px;
+        height: 40px;
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.64);
+        font-family: 'Inter', sans-serif;
+        animation: busca-aparece .5s linear;
+    }
+    .text-field-aparece:focus{
+        background: rgba(255, 255, 255, 0.24);
+        outline: none;
+        transition: 1s;
+    }
+    .text-field-aparece:focus::placeholder{
+        color:transparent;
+    }
+    .text-field-aparece::placeholder{
+        color:#FFFFFF;
+        opacity: 0.64;
+    }
     .text-field{
         display: none;
     }
     #responsivo-mobile{
         display: inline;
     }
-    #lupa-responsiva{
+    .lupa-responsiva{
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+    .lupa-naoaparece{
+        display: none;
+    }
+    .lupa2-aparece{
         display: inline-block;
         margin: 0 10px 0 0;
     }
@@ -447,5 +496,9 @@
     #salvar{
         width: 300px;
         margin: 10px 0 32px 0;
+    }
+    @keyframes busca-aparece {
+        from{transform: translateX(-100%)}
+        to{transform: translateX(0)}
     }
 }

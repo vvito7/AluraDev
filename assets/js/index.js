@@ -28,7 +28,7 @@ botao.addEventListener('click', function(){
 });
 
 /*menu-hamburguer*/
-const botaoBarras = document.querySelector('.menu-responsivo');//
+const botaoBarras = document.querySelector('.menu-responsivo');
 const botaoXis = document.querySelector('.fechar-menu');
 const menu = document.querySelector('.menu');
 
@@ -49,8 +49,27 @@ botaoXis.addEventListener('click', function(){
 });
 
 /*barra de busca mobile*/
-const lupaPesquisa = document.querySelector('#lupa-responsiva');
+const lupaPesquisa = document.querySelector('.lupa-responsiva');
+const lupaPesquisa2 = document.querySelector('.lupa-responsiva2');
+const campoBusca = document.querySelector('.text-field');
+const logoAlura = document.querySelector('.logo-alura');
 
 lupaPesquisa.addEventListener('click', function(){
-    
+    lupaPesquisa.classList.add('lupa-naoaparece');
+    lupaPesquisa.classList.remove('lupa-responsiva');
+    lupaPesquisa2.classList.add('lupa2-aparece');
+    lupaPesquisa2.classList.remove('lupa-responsiva2');
+    campoBusca.classList.remove('text-field');
+    campoBusca.classList.add('text-field-aparece');
+    logoAlura.classList.add('logo-naoaparece');
+});
+
+lupaPesquisa2.addEventListener('click', function(){
+    lupaPesquisa.classList.remove('lupa-naoaparece');
+    lupaPesquisa.classList.add('lupa-responsiva');
+    lupaPesquisa2.classList.remove('lupa2-aparece');
+    lupaPesquisa2.classList.add('lupa-responsiva2');
+    campoBusca.classList.remove('text-field-aparece');
+    campoBusca.classList.add('text-field');
+    logoAlura.classList.remove('logo-naoaparece');
 });
