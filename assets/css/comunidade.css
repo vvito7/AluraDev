@@ -52,14 +52,25 @@ body{
     white-space: pre-wrap;
     outline: none;
     overflow: auto;
-    margin: 35px 0 0 0;
+    margin: 30px 0 0 0;
     width: 328px;
-    height: 240px;
+    height: 230px;
     background-color: #141414;
     border: none;
     color: #F8F8F8;
     font-family: 'Verdana', sans-serif;
     cursor: auto;
+}
+#editor-pequeno::-webkit-scrollbar{
+    width: 10px;
+}
+#editor-pequeno::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 10px;
+}
+#editor-pequeno::-webkit-scrollbar-thumb{
+    background: #555;
+    border-radius: 10px;
 }
 
 #projeto-info{

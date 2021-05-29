@@ -79,7 +79,7 @@ function criaCartao(projeto) {
                         <img class='ellipses' src='assets/imagens/ellipse-1.svg'>
                     </div>
                     <div id='text-editor'>
-                        <code id='editor-pequeno' class="hljs ${projeto.detalhesDoProjeto.linguagem}">${projeto.detalhesDoProjeto.codigo}</code>
+                        <pre><code id='editor-pequeno' class="hljs ${projeto.detalhesDoProjeto.linguagem}">${projeto.detalhesDoProjeto.codigo}</code></pre>
                     </div>
                 </div>
             </div>
@@ -91,3 +91,5 @@ function criaCartao(projeto) {
     `
     return cartao
 }
+
+hljs.highlightAll()
