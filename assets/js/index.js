@@ -73,3 +73,51 @@ lupaPesquisa2.addEventListener('click', function(){
     campoBusca.classList.add('text-field');
     logoAlura.classList.remove('logo-naoaparece');
 });
+
+/*pegando informações e mandando para um objeto*/
+const tituloProjeto = document.querySelector('#nome-projeto');
+const descricaoProjeto = document.querySelector('#descricao-projeto');
+const botaoSalvar = document.querySelector('#salvar');
+
+botaoSalvar.addEventListener('click', function(){
+    if (typeof(Storage) !== "undefined") {
+        const projeto = montaProjeto();
+        salvaLocalStorage(projeto);
+    }
+});
+
+function montaProjeto(){
+    let projeto = {
+        'id': atribuiId(),
+        'detalhesDoProjeto': {
+            'nomeDoProjeto': tituloProjeto.value,
+            'descricaoDoProjeto': descricaoProjeto.value,
+            'linguagem': linguagem.value,
+            'cor': selecionaCorEditor.value,
+            'codigo': areaDoCodigo.querySelector('code').innerText
+        }
+    }
+    return projeto;
+}
+
+let numeroId = 1
+
+if(localStorage.length > 0) {
+    numeroId = localStorage.length
+}
+
+function atribuiId() {
+    if(localStorage.length == 0) {
+        return 0;
+    } else {
+        if(localStorage.length == numeroId) {
+            let novoId = numeroId;
+            numeroId++;
+            return novoId;
+        }
+    }
+}
+
+function salvaLocalStorage(objetoJson) {
+    localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
+}
