@@ -101,3 +101,61 @@ body{
     border-radius: 16px;
     padding: 17px 15px;
 }
+
+@media screen and (min-width: 320px){
+    #conteudo-pagina-projetos{
+        display: flex;
+    }
+    .comunidade{
+        margin: 32px;
+    }
+    #quadro-projeto{
+        position: initial;
+        width: 300px;
+        padding: 1px;
+    }
+    #projeto-codigo{
+        position: inherit;
+        width: 236px;
+    }
+    .botoes{
+        position: initial;
+        margin: 13px 13px 0 163px;
+        padding: 15px 0 0 0;
+    }
+    #editor-pequeno{
+        position: initial;
+        width: 195px;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #conteudo-pagina-projetos{
+        display: flex;
+    }
+    .comunidade{        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 32px 64px 32px 32px;
+    }
+    #quadro-projeto{
+        position: initial;
+        width: 310px;
+        padding: 1px;
+    }
+    #projeto-codigo{
+        position: inherit;
+        width: 246px;
+    }
+    .botoes{
+        position: initial;
+        margin: 13px 13px 0 172px;
+        padding: 15px 0 0 0;
+    }
+    #editor-pequeno{
+        position: initial;
+        width: 205px;
+        margin: 20px 0 0 0;
+    }
+}
