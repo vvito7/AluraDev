@@ -199,11 +199,11 @@ body{
     }
     .sem-projetos{
         position: initial;
-        margin: 30px 0 0 30px;
+        margin: 30px 0 0 0;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     #conteudo-pagina-projetos{
         display: flex;
     }
