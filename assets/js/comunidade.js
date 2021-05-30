@@ -87,9 +87,48 @@ function criaCartao(projeto) {
                 <h2 id="projeto-titulo">${projeto.detalhesDoProjeto.nomeDoProjeto}</h2>
                 <p id="projeto-descricao">${projeto.detalhesDoProjeto.descricaoDoProjeto}</p>
             </div>
+            <div class='projetos-info-hidden-desativado'>
+                <div class='projetos-info-reacoes'>
+                    <div class='projetos-reacoes-comentario'>
+                        <img src='assets/imagens/comentario.svg'>
+                        <p class='projetos-reacoes'>5</p>
+                    </div>
+                    <div class='projetos-reacoes-curtida'>
+                        <img src='assets/imagens/curtida.svg'>
+                        <p class='projetos-reacoes'>21</p>
+                    </div>
+                </div>
+                <div class='projetos-info-profile'>
+                    <img src='assets/imagens/author_foto.svg'>
+                    <p class='projetos-reacoes'>@Harry</p>
+                </div>
+            </div>
         </div>
     `
     return cartao
 }
 
+/*tela de boas vindas, caso nao tenha projetos*/
+const comunidadeSemProjeto = document.querySelector('.sem-projetos-desativado');
+
+if(localStorage.length == 0){
+    comunidadeSemProjeto.classList.remove('sem-projetos-desativado');
+    comunidadeSemProjeto.classList.add('sem-projetos');
+}
+
+/*hover do card*/
+const projetoCard = document.querySelector('#projeto-card');
+const cardHover = document.querySelector('.projetos-info-hidden-desativado');
+
+projetoCard.addEventListener('mouseover', function(){
+    cardHover.classList.remove('projetos-info-hidden-desativado');
+    cardHover.classList.add('projetos-info-hidden');
+});
+
+projetoCard.addEventListener('mouseout', function(){
+    cardHover.classList.add('projetos-info-hidden-desativado');
+    cardHover.classList.remove('projetos-info-hidden');
+});
+
+/*aplicando o hljs em todos os code da pagina*/
 hljs.highlightAll()

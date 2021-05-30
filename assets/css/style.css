@@ -96,16 +96,9 @@
     border-radius: 16px;
     padding: 17px 15px;
 }
-#conteudo-codigo{
+#conteudo-comunidade, #conteudo-menu, #conteudo-codigo{
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
-    font-size: 14px;
-    margin: 0 0 0 10px;
-}
-#conteudo-comunidade, #conteudo-menu{
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
-    opacity: 0.56;
     font-size: 14px;
     margin: 0 0 0 10px;
 }
