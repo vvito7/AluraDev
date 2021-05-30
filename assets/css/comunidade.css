@@ -123,7 +123,10 @@ body{
 }
 .sinal__projetos{
     margin: 15px 0 0 0;
-    width: 40px;
+    width: 30px;
+    background: rgba(45, 65, 91, 1);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .projetos-info-hidden-desativado{
