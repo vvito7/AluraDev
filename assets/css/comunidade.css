@@ -108,7 +108,7 @@ body{
 }
 .sem-projetos{
     position: absolute;
-    margin: 100px 0 0 140px;
+    margin: 75px 0 0 140px;
     font-family: 'Inter', sans-serif;
     color: #fff;
     text-align: center;
@@ -119,7 +119,7 @@ body{
 }
 .sem-projetos__linha2{
     font-size: 1.5rem;
-    opacity: 0.9;
+    color: rgba(255,255,255,0.9);
 }
 .sinal__projetos{
     margin: 15px 0 0 0;
@@ -171,39 +171,8 @@ body{
     to{opacity: 1;}
 }
 
-@media screen and (max-width: 376px){
-    #conteudo-pagina-projetos{
-        display: flex;
-    }
-    .comunidade{
-        margin: 32px;
-    }
-    #quadro-projeto{
-        position: initial;
-        width: 300px;
-        padding: 1px;
-    }
-    #projeto-codigo{
-        position: inherit;
-        width: 236px;
-    }
-    .botoes{
-        position: initial;
-        margin: 13px 13px 0 163px;
-        padding: 15px 0 0 0;
-    }
-    #editor-pequeno{
-        position: initial;
-        width: 195px;
-        margin: 20px 0 0 0;
-    }
-    .sem-projetos{
-        position: initial;
-        margin: 30px 0 0 0;
-    }
-}
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     #conteudo-pagina-projetos{
         display: flex;
     }
@@ -234,5 +203,37 @@ body{
     .sem-projetos{
         position: initial;
         margin: 50px 0 0 80px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #conteudo-pagina-projetos{
+        display: flex;
+    }
+    .comunidade{
+        margin: 32px;
+    }
+    #quadro-projeto{
+        position: initial;
+        width: 300px;
+        padding: 1px;
+    }
+    #projeto-codigo{
+        position: inherit;
+        width: 236px;
+    }
+    .botoes{
+        position: initial;
+        margin: 13px 13px 0 163px;
+        padding: 15px 0 0 0;
+    }
+    #editor-pequeno{
+        position: initial;
+        width: 195px;
+        margin: 20px 0 0 0;
+    }
+    .sem-projetos{
+        position: initial;
+        margin: 30px 0 0 0;
     }
 }
