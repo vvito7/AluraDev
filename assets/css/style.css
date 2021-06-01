@@ -176,6 +176,16 @@
     background-color: rgba(80, 129, 251, 0.16);
     transition: 1s;
 }
+#botao-exportar{
+    margin: 10px 0 32px 32px;
+    width: 672px;
+    height: 40px;
+    background-color: #5081FB;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: #141414;
+}
 
 /*sobre*/
 #sobre{
