@@ -74,7 +74,7 @@ lupaPesquisa2.addEventListener('click', function(){
     logoAlura.classList.remove('logo-naoaparece');
 });
 
-/*pegando informações e mandando para um objeto*/
+/*pegando informações e mandando para um objeto js*/
 const tituloProjeto = document.querySelector('#nome-projeto');
 const descricaoProjeto = document.querySelector('#descricao-projeto');
 const botaoSalvar = document.querySelector('#salvar');
