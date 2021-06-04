@@ -1,14 +1,11 @@
-export class DomToImage{
-    qualquerCoisa(){
-        import domtoimage from 'dom-to-image';
-        const quadro = document.querySelector('#quadro');
-        const botao = document.querySelector('#botao-exportar');
-        
-        botao.addEventListener('click', function(){
-            domtoimage.toBlob(quadro)
-            .then(function (blob) {
-                saveAs(blob, 'code.png');
-            });
-        });
-    }
-}
+import domtoimage from 'dom-to-image';
+import { saveAs } from 'file-saver';
+const quadro = document.querySelector('#editor-codigo');
+const botao = document.querySelector('#botao-exportar');
+
+botao.addEventListener('click', function(){
+    domtoimage.toBlob(quadro)
+    .then(function (blob) {
+        window.saveAs(blob, 'code.png');
+    });
+});

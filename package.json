@@ -1,11 +1,8 @@
 {
-  "scripts": {
-    "start": "webpack serve --mode development --config webpack.config.js",
-    "build-dev": "webpack --mode development --config webpack.config.js"
-  },
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.0",
     "file-loader": "^6.2.0",
+    "file-saver": "^2.0.5",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
