@@ -107,25 +107,26 @@
 }
 
 /*editor de codigo*/
-#quadro{
+#editor-de-codigo{
     margin: 32px 0 0 32px;
-    width: 672px;
-    height: 366px;
+}
+#quadro{
+    width: 610px;
+    height: 302px;
     background-color: #6BD1FF;
     border-radius: 8px;
+    padding: 32px;
 }
 #editor-codigo{
-    position: absolute;
-    width: 608px;
     height: 302px;
     border-radius: 8px;
     background-color: #141414;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-    margin: 32px;
 }
 .header-editor{
     display: block;
-    margin: 13px 13px 0 0;
+    padding: 10px 0 0 0;
+    margin: 0 13px 0 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -181,7 +182,7 @@
     transition: 1s;
 }
 #botao-exportar{
-    margin: 20px 0 0 32px;
+    margin: 20px 0 0 0;
     width: 321px;
     height: 45px;
     background-color: #5081FB;
@@ -379,9 +380,6 @@
         display: flex;
         flex-direction: column;
     }
-    #quadro{
-        padding: 3px 0 0 0;
-    }
     #editor-codigo{
         position: initial;
     }
@@ -428,8 +426,8 @@
     }
     #cabecalho{
         display: flex;
-        width: 295px;
-        margin: 32px 32px 0px 64px;
+        width: 350px;
+        margin: 32px 32px 0px 32px;
     }
     .logo-naoaparece{
         display: none;
@@ -480,48 +478,47 @@
     .menu-open{
         margin: 10px 0 0 131px;
     }
-    #quadro{
-        width: 300px;
-        margin: 32px 0 0 64px;
+    #editor-de-codigo{
+        margin: 32px 0 0 32px;
     }
-    #editor-codigo{
-        width: 236px;
+    #quadro{
+        width: 290px;
     }
     #editor{
         width: 190px;
     }
     .botoes{
         flex-direction: column;
+        width: 350px;
     }
     #botao-exportar{
-        width: 300px;
-        margin: 20px 0 0 15px;
+        width: 350px;
     }
     #botao-highlight{
-        width: 300px;
-        margin: 10px 0 0 15px;
+        width: 350px;
+        margin: 10px 0 0 0;
     }
     #sobre{
-        margin: 32px 0 0 64px;
+        margin: 32px 0 0 32px;
     }
     #nome-projeto{
-        width: 266px;
+        width: 315px;
     }
     #descricao-projeto{
-        width: 270px;
+        width: 320px;
     }
     #selecionar{
         flex-direction: column;
     }
     #selecionar-linguagem{
         margin: 0 0 10px 0;
-        width: 300px;
+        width: 345px;
     }
     #selecionar-cor{
-        width: 295px;
+        width: 340px;
     }
     #salvar{
-        width: 300px;
+        width: 345px;
         margin: 10px 0 32px 0;
     }
     @keyframes busca-aparece {
@@ -588,7 +585,7 @@
         margin: 10px 0 0 131px;
     }
     #quadro{
-        width: 300px;
+        width: 236px;
     }
     #editor-codigo{
         width: 236px;
@@ -598,10 +595,10 @@
     }
     .botoes{
         flex-direction: column;
+        width: 300px;
     }
     #botao-exportar{
         width: 300px;
-        margin: 20px 0 0 0;
     }
     #botao-highlight{
         width: 300px;
