@@ -84,6 +84,7 @@ function criaCartao(projeto) {
             </div>
         </div>
         <div id='projeto-info'>
+            <img class='excluir-projeto' src='src/assets/imagens/menu-fechar.svg'>
             <h2 id="projeto-titulo">${projeto.detalhesDoProjeto.nomeDoProjeto}</h2>
             <p id="projeto-descricao">${projeto.detalhesDoProjeto.descricaoDoProjeto}</p>
         </div>
@@ -128,6 +129,6 @@ projetoCard.addEventListener('mouseout', function(){
     cardHover.classList.add('projetos-info-hidden-desativado');
     cardHover.classList.remove('projetos-info-hidden');
 });
-        
+
 /*aplicando o hljs em todos os code da pagina*/
 hljs.highlightAll()

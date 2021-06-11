@@ -165,6 +165,9 @@ body{
 .projetos-reacoes{
     color: #fff;
 }
+.excluir-projeto{
+    margin: 0 0 0 88%;
+}
 
 @keyframes aparecer {
     from{opacity: 0;}
